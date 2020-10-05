@@ -27,13 +27,19 @@
     <ClCompile Include="Compra.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Empresa.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="TipoMembresia.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Fecha.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MembresiaClasica.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MembresiaExclusiva.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sistema.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -47,13 +53,19 @@
     <ClInclude Include="Compra.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Empresa.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="TipoMembresia.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Fecha.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MembresiaClasica.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MembresiaExclusiva.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sistema.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

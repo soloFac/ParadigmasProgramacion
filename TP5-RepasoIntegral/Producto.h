@@ -1,34 +1,24 @@
-#pragma once
 #ifndef PRODUCTO_H_
 #define PRODUCTO_H_
-#include "Compra.h"
+#include <string>
 #include <iostream>
 
 using namespace std;
 
-class Producto
-{
-
+class Producto {
 private:
-	int codigo;	//static?
+	int codigo;
 	string nombre;
 	bool importado;
 	float precio;
 public:
-	bool EsImportado();
+	Producto(int codigo, string nombre, bool importado, float precio);
+	int getCodigo();
+	string getNombre();
+	bool esImportado();
 	float getPrecio();
-	float CalcularRecaudacion(string mes);
-	void Registrar(Compra compra);
-	/*
-	codigo
-	nombre
-	importado
-	precio
-	+ es importado?
-	+ get precio?
-	+ calcular recaudacion(mes)
-	+ registrar (compra)
-	*/
 };
+
+ostream& operator<<(ostream& salida, Producto& Prod);
 
 #endif

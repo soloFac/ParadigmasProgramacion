@@ -141,18 +141,22 @@
   <ItemGroup>
     <ClCompile Include="Cliente.cpp" />
     <ClCompile Include="Compra.cpp" />
-    <ClCompile Include="Empresa.cpp" />
     <ClCompile Include="Fecha.cpp" />
+    <ClCompile Include="MembresiaClasica.cpp" />
+    <ClCompile Include="MembresiaExclusiva.cpp" />
     <ClCompile Include="Producto.cpp" />
+    <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="TipoMembresia.cpp" />
     <ClCompile Include="TP5-RepasoIntegral.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cliente.h" />
     <ClInclude Include="Compra.h" />
-    <ClInclude Include="Empresa.h" />
     <ClInclude Include="Fecha.h" />
+    <ClInclude Include="MembresiaClasica.h" />
+    <ClInclude Include="MembresiaExclusiva.h" />
     <ClInclude Include="Producto.h" />
+    <ClInclude Include="Sistema.h" />
     <ClInclude Include="TipoMembresia.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

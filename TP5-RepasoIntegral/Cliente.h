@@ -1,12 +1,12 @@
 #pragma once
+
 #ifndef CLIENTE_H_
 #define CLIENTE_H_
+#include <string>
+#include "Compra.h"
+#include <vector>
 #include "TipoMembresia.h"
-#include <iostream>
-
 using namespace std;
-
-
 class Cliente
 {
 private:
@@ -15,25 +15,22 @@ private:
 	string direccion;
 	string dni;
 	string telefono;
-	TipoMembresia* membresia;
+	TipoMembresia* miMembresia;
+	vector<Compra*> compras;
 
 public:
-	void AnotarseMembresia();
-	void ComprarProducto();
-	float CalcularDescuento();
-	void RealizarCompra();
-	/*
-	-nombre
-	- apellido
-	- direccion
-	- dni
-	- telefono
-	- dni
-	+ Anotarse en alguna membresía (cambiarMembresia) : void
-	+ compra productos
-	+ calcular descuento
-	+ Realizar compra
-	*/
+	Cliente();
+	Cliente(string nombre, string apellido, string direccion, string dni, string telefono);
+	string getNombre();
+	string getApellido();
+	string getDireccion();
+	string getDni();
+	string getTelefono();
+	TipoMembresia* getMembresia();
+	//TipoMembresia* CrearMembresiaSegunTipo(Tipo tipoMembresia);
+	void AnotarseMemebresia(Tipo tipoMembresia);
+	//void AgregarCompra(int dia, int mes, int anio);
+	~Cliente();
 };
 
 #endif

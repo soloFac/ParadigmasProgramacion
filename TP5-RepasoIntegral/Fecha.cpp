@@ -1,6 +1,7 @@
 /*
  * Fecha.cpp
  */
+#pragma warning(disable:4996)
 
 #include "Fecha.h"
 #include <iostream>

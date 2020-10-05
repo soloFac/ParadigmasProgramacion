@@ -4,26 +4,24 @@
 #include "Cliente.h"
 #include "Producto.h"
 #include "Fecha.h"
-#include "vector"
+#include <vector>
 #include <iostream>
-
-using namespace std;
 
 class Compra
 {
-private:
+protected:
 	Cliente* cliente;
+	Fecha* fechaCompra;
 	vector<Producto*> productos;
-	Fecha* fecha;
 public:
-	void AgregarProducto(vector<Producto*> productos);	//vector como parametro?
-	void CalcularMonto(vector<Producto*> productos);
-	/*-cliente
-	- productos
-	- fecha
-	+ agregar producto
-	+ calcular monto
-	*/
+	Compra();
+	Compra(string nombre, string apellido, string direccion, string dni, string telefono, int dia, int mes, int anio);
+	Fecha* getFecha();
+	Cliente* getCliente();
+	vector<Producto*> getProducto();
+	void setFechaCompra(int dia, int mes, int anio);
+	void setCliente(string nombre, string apellido, string direccion, string dni, string telefono);
+	void AgregarProducto(int codigo, string nombre, bool importado, float precio);
+	float CalcularMonto();
 };
-
 #endif
