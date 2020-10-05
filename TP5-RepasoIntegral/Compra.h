@@ -23,5 +23,7 @@ public:
 	void setCliente(string nombre, string apellido, string direccion, string dni, string telefono);
 	void AgregarProducto(int codigo, string nombre, bool importado, float precio);
 	float CalcularMonto();
+	~Compra();
 };
+
 #endif

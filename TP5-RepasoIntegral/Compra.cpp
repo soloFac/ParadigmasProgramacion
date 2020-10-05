@@ -40,3 +40,13 @@ float Compra::CalcularMonto() {
 	}
 	return monto = monto;
 }
+
+Compra::~Compra(){
+	vector<Producto*>::iterator it;
+	for (it = productos.begin(); it != productos.end(); ++it)
+	{
+		delete (*it);
+	}
+	delete cliente;
+	delete fechaCompra;
+}

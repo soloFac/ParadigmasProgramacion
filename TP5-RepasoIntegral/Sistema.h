@@ -27,6 +27,7 @@ public:
 	bool RegistrarCliente(string nombre, string apellido, string direccion, string dni, string telefono);
 	/*+calcular recaudacion(mes)
 	+registrar(compra)*/
+	~Sistema();
 };
 
 #endif
