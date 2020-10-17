@@ -12,7 +12,7 @@ Cliente::Cliente(string nombre, string apellido, string direccion, string dni, s
 	this->dni = dni;
 	this->telefono = telefono;
 	//Por defecto la membresia Clasica es no paga, no tiene beneficios
-	this->miMembresia = new MembresiaClasica;
+	this->Membresia = new MembresiaClasica;
 }
 
 
@@ -22,55 +22,13 @@ string Cliente::getDireccion() { return direccion; }
 string Cliente::getDni() { return dni; }
 string Cliente::getTelefono() { return telefono; }
 
-//CORREGIR, ESTA COMO COMPOSICION??
-void Cliente::AnotarseMemebresia(Tipo tipoMembresia) {
-	delete this->miMembresia;
-	MembresiaClasica mclasica;
-	MembresiaExclusiva mexclusiva;
-
-	switch (tipoMembresia)
-	{
-	case clasica:
-		this->miMembresia = &mclasica;
-		break;
-	case exclusiva:
-		this->miMembresia = &mexclusiva;
-		break;
-	default:
-		break;
-	}
+void Cliente::AnotarseMembresia(TipoMembresia* tipoMembresia) {
+	this->Membresia = tipoMembresia;
 }
-//
-//void Cliente::AgregarCompra(int dia, int mes, int anio) {
-//	Compra* compra = new Compra()
-//	compras.insert();
-//}
 
 TipoMembresia* Cliente::getMembresia() {
-	return this->miMembresia;
+	return this->Membresia;
 }
 
 Cliente::~Cliente() {
-	vector<Compra*>::iterator it;
-	for (it = compras.begin(); it != compras.end() ; ++it)
-	{
-		delete (*it);
-	}
-	compras.clear();
 }
-
-//TipoMembresia* Cliente::CrearMembresiaSegunTipo(Tipo tipoMembresia) {
-//	TipoMembresia* membresia;
-//	switch (tipoMembresia)
-//	{
-//	case clasica:
-//		membresia = new MembresiaClasica();
-//		break;
-//	case exclusiva:
-//		membresia = new MembresiaExclusiva();
-//		break;
-//	default:
-//		break;
-//	}
-//	return membresia;
-//}

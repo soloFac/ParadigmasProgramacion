@@ -1,59 +1,52 @@
 // TP5-RepasoIntegral.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-#include "Empresa.h"
+#include "Sistema.h"
 #include "Producto.h"
 #include "Compra.h"
 #include "Cliente.h"
 
-#include <iostream>
-
 
 int main()
 {
-    //pruebo 2 clientes
-    Cliente clientePrueba("Manuel", "lamas", 50.5, true);
-    Cliente clientePrueba2("Pepito", "Fulano", 12.5, false);
+    Sistema* s = new Sistema("");
+    //    pruebo 2 clientes
 
-    //pruebo 5 productos
-    Producto play(123, "playstation", true, 1487.5);
-    Producto xbox(145, "xbox one", true, 1800.5);
+    Cliente* clientePrueba = new Cliente("Manuel", "Lamas", "La Quiaca", "40215463", "381215465");
+    Cliente* clientePrueba2 = new Cliente("Pepito", "Fulano", "Av Siempre Viva", "20548736", "215448773");
+
+    clientePrueba->AnotarseMembresia(new MembresiaExclusiva());
+    clientePrueba2->AnotarseMembresia(new MembresiaExclusiva());
+    //pruebo 4 productos
+    Producto play(123, "Playstation", true, 1487.5);
+    Producto xbox(145, "Xbox One", true, 53080.5);
     Producto tetris(148, "Tetris!", false, 510);
-    Producto pc(177, "notebook", false, 480);
+    Producto pc(177, "Notebook", false, 48000);
+
 
     //primer cliente
-    clientePrueba.agregarAlCarrito(play);
-    clientePrueba.agregarAlCarrito(xbox);
+    Compra* c1 = new Compra(clientePrueba, 5, 2, 2020);
+    c1->AgregarProducto(&play);
+    c1->AgregarProducto(&xbox);
 
-    //2do cliente
-    clientePrueba2.agregarAlCarrito(play);
-    clientePrueba2.agregarAlCarrito(xbox);
-    clientePrueba2.agregarAlCarrito(tetris);
-    clientePrueba2.agregarAlCarrito(pc);
+    //    //2do cliente
+    Compra* c2 = new Compra(clientePrueba2, 5, 2, 2020);
+    c2->AgregarProducto(&play);
+    c2->AgregarProducto(&xbox);
+    c2->AgregarProducto(&pc);
+    c2->AgregarProducto(&tetris);
 
-    Compra compraUno(clientePrueba, Fecha());
-    Compra compraDos(clientePrueba2, Fecha());
-    //esta compra no tiene elementos porque se eliminan del carrito de clientePrueba en la primera
-    Compra compraTres(clientePrueba, Fecha());
+    s->RegistrarCompra(c1);
+    s->RegistrarCompra(c2);
 
+    cout << "valor de la compra: $" << c1->CalcularMonto() << endl;
+    cout << "valor de la compra: $" << c2->CalcularMonto() << endl;
 
-    cout << "valor de la compra: " << compraUno.getMonto() << endl;
-    cout << "valor de la compra: " << compraDos.getMonto() << endl;
-    cout << "esta compra no se hace" << compraTres.getMonto() << endl;
     cout << play << endl;
 
-    //Bien, que uml estan usando? oks
-    // fijate en el drawio, la ultima hoja, pero le faltan cosas que aqui no puse, no es lo mio el uml
+    cout << "Recaudacion febrero: " << s->CalcularRecaudacion(2) << endl;
+    cout << "Recaudacion Marzo: " << s->CalcularRecaudacion(3) << endl;
+
+
 
     return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

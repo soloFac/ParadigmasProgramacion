@@ -12,6 +12,7 @@ private:
 	bool importado;
 	float precio;
 public:
+	Producto();
 	Producto(int codigo, string nombre, bool importado, float precio);
 	int getCodigo();
 	string getNombre();

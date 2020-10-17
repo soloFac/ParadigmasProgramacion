@@ -3,6 +3,10 @@
 #include <iomanip>
 using namespace std;
 
+Producto::Producto() {
+
+}
+
 Producto::Producto(int codigo, string nombre, bool importado, float precio) {
 	this->codigo = codigo;
 	this->nombre = nombre;
@@ -28,7 +32,7 @@ ostream& operator<<(ostream& salida, Producto& Prod) {
 		imported = "NO";
 	}
 
-	salida << "Codigo: " << Prod.getCodigo() << "\nNombre: " << Prod.getNombre() << "\nImportado; " << imported << "\nPrecio: $" << Prod.getPrecio();
-	
+	salida << "Codigo: " << Prod.getCodigo() << "\nNombre: " << Prod.getNombre() << "\nImportado: " << imported << "\nPrecio: $" << Prod.getPrecio();
+
 	return salida;
 }

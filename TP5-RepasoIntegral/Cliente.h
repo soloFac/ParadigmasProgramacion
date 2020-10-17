@@ -3,9 +3,10 @@
 #ifndef CLIENTE_H_
 #define CLIENTE_H_
 #include <string>
-#include "Compra.h"
 #include <vector>
 #include "TipoMembresia.h"
+#include "MembresiaClasica.h"
+#include "MembresiaExclusiva.h"
 using namespace std;
 class Cliente
 {
@@ -15,8 +16,7 @@ private:
 	string direccion;
 	string dni;
 	string telefono;
-	TipoMembresia* miMembresia;
-	vector<Compra*> compras;
+	TipoMembresia* Membresia;
 
 public:
 	Cliente();
@@ -27,9 +27,7 @@ public:
 	string getDni();
 	string getTelefono();
 	TipoMembresia* getMembresia();
-	//TipoMembresia* CrearMembresiaSegunTipo(Tipo tipoMembresia);
-	void AnotarseMemebresia(Tipo tipoMembresia);
-	//void AgregarCompra(int dia, int mes, int anio);
+	void AnotarseMembresia(TipoMembresia* tipoMembresia);
 	~Cliente();
 };
 

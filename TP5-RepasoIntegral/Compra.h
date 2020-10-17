@@ -2,26 +2,30 @@
 #ifndef COMPRA_H_
 #define COMPRA_H_
 #include "Cliente.h"
+//class Cliente;
 #include "Producto.h"
 #include "Fecha.h"
+#include "TipoMembresia.h"
 #include <vector>
 #include <iostream>
 
 class Compra
 {
 protected:
-	Cliente* cliente;
 	Fecha* fechaCompra;
+	Cliente* cliente;
 	vector<Producto*> productos;
 public:
 	Compra();
-	Compra(string nombre, string apellido, string direccion, string dni, string telefono, int dia, int mes, int anio);
-	Fecha* getFecha();
-	Cliente* getCliente();
-	vector<Producto*> getProducto();
-	void setFechaCompra(int dia, int mes, int anio);
-	void setCliente(string nombre, string apellido, string direccion, string dni, string telefono);
-	void AgregarProducto(int codigo, string nombre, bool importado, float precio);
+	Compra(Cliente*, int dia, int mes, int anio);
+	void AgregarProducto(Producto*);
 	float CalcularMonto();
+	Cliente getCliente();
+	vector<Producto*> getProductos();
+	Fecha getFecha();
+	~Compra();
 };
+ostream& operator<<(ostream& salida, Compra& compra);
+
 #endif
+
