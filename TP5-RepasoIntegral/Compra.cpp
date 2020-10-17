@@ -46,5 +46,19 @@ ostream& operator<<(ostream& salida, Compra& compra) {
 	for (it = compra.getProductos().begin(); it != compra.getProductos().end(); ++it) {
 		salida << *it << endl;
 	}
+<<<<<<< HEAD
 	return salida;
+=======
+	return monto = monto;
+}
+
+Compra::~Compra(){
+	vector<Producto*>::iterator it;
+	for (it = productos.begin(); it != productos.end(); ++it)
+	{
+		delete (*it);
+	}
+	delete cliente;
+	delete fechaCompra;
+>>>>>>> d9af8bd89e2779dd2853a5036adb5a0e7b9c2358
 }

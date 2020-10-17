@@ -20,12 +20,17 @@ public:
 	Compra(Cliente*, int dia, int mes, int anio);
 	void AgregarProducto(Producto*);
 	float CalcularMonto();
+<<<<<<< HEAD
 	Cliente getCliente();
 	vector<Producto*> getProductos();
 	Fecha getFecha();
 	~Compra();
 };
 ostream& operator<<(ostream& salida, Compra& compra);
+=======
+	~Compra();
+};
+>>>>>>> d9af8bd89e2779dd2853a5036adb5a0e7b9c2358
 
 #endif
 
