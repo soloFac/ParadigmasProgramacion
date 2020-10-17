@@ -131,3 +131,8 @@ void VectorItem<Item>::mostrarVector() {
     }
 }
 
+
+template <class Item>
+bool operator ==(Item x, Item y){
+    return (x==y);
+}
