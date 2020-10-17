@@ -1,0 +1,2 @@
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\TP6-Contenedor-Iterador\Debug\TP6-Contenedor-Iterador.exe
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\TP6-Contenedor-Iterador\Debug\TP6-Contenedor-Iterador.pdb

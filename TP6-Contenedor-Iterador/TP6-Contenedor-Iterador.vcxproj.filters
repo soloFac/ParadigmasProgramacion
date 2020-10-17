@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Punto1">
+      <UniqueIdentifier>{bd2303af-2947-46fa-b189-278b8d2139c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Punto1\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Punto1\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Punto2">
+      <UniqueIdentifier>{e452ed38-d1f9-496f-9e2a-4b084e6c8064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Punto2\Header Files">
+      <UniqueIdentifier>{63cf9bf2-4526-4304-a159-8c49ff3dc2cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Punto2\Source Files">
+      <UniqueIdentifier>{07f52509-9447-45a0-b87c-2dc6d0825d01}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TP6-Contenedor-Iterador.cpp">
+      <Filter>Punto1\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>Punto1\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Iterador.cpp">
+      <Filter>Punto1\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IteradorDeVector.cpp">
+      <Filter>Punto2\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorItem.cpp">
+      <Filter>Punto2\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Vector.h">
+      <Filter>Punto1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Iterador.h">
+      <Filter>Punto1\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IteradorDeVector.h">
+      <Filter>Punto2\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorItem.h">
+      <Filter>Punto2\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

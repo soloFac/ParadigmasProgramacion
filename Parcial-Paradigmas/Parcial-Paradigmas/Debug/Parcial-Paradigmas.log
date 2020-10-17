@@ -1,0 +1,15 @@
+﻿  Asistencia.cpp
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\Parcial-Paradigmas\Parcial-Paradigmas\Asistencia.cpp(8,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Cargo.cpp
+  Construccion.cpp
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\Parcial-Paradigmas\Parcial-Paradigmas\Construccion.cpp(8,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Empleado.cpp
+  Nave.cpp
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\Parcial-Paradigmas\Parcial-Paradigmas\Nave.cpp(27,10): warning C4018: '<=': signed/unsigned mismatch
+  Parcial-Paradigmas.cpp
+  SeccionConstruccion.cpp
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\Parcial-Paradigmas\Parcial-Paradigmas\SeccionConstruccion.cpp(61,10): warning C4018: '<=': signed/unsigned mismatch
+  Generating Code...
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\Parcial-Paradigmas\Parcial-Paradigmas\SeccionConstruccion.cpp(65): warning C4715: 'SeccionConstruccion::getNave': not all control paths return a value
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\Parcial-Paradigmas\Parcial-Paradigmas\Nave.cpp(37): warning C4717: 'operator<<': recursive on all control paths, function will cause runtime stack overflow
+  Parcial-Paradigmas.vcxproj -> C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\Parcial-Paradigmas\Parcial-Paradigmas\Debug\Parcial-Paradigmas.exe
