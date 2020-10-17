@@ -32,29 +32,4 @@ Sistema::~Sistema() {
 	{
 		delete(*itcomp);
 	}
-<<<<<<< HEAD
-=======
-	return recaudacion;
-}
-
-Sistema::~Sistema(){
-	vector<Producto*>::iterator itprod;
-	for (itprod = producto.begin(); itprod != producto.end(); ++itprod)
-	{
-		delete(*itprod);
-	}
-	
-	vector<Compra*>::iterator itcomp;
-	for (itcomp = compra.begin(); itcomp != compra.end(); ++itcomp)
-	{
-		delete(*itcomp);
-	}
-
-	vector<Cliente*>::iterator itclient;
-	for (itclient = cliente.begin(); itclient != cliente.end(); ++itclient)
-	{
-		delete(*itclient);
-	}
-	
->>>>>>> d9af8bd89e2779dd2853a5036adb5a0e7b9c2358
 }
