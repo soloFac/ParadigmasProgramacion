@@ -1,9 +1,9 @@
 /*
-Paradigmas de programación
+Paradigmas de programaciï¿½n
 Grupo 12
 Guido Luciano D'Arpino
-Manuel Ramón Lamas
-Franco Pérez de La Rosa
+Manuel Ramï¿½n Lamas
+Franco Pï¿½rez de La Rosa
 # Usando live share Visual Studio Code
 */
 #include "VectorItem.h"
@@ -12,8 +12,20 @@ Franco Pérez de La Rosa
 #define indef -9999
 using namespace std;
 
+
 template <class Item>
-VectorItem<Item>::VectorItem<Item>(int dim, int valor) {
+VectorItem<Item>::VectorItem(int cap) {
+    this->capacidad = cap;
+    this->vect = new int[cap];
+    // recorrer el vector y cargarlo del indef/ null(?)
+    for (int i = 0; i < this->capacidad; i++)
+    {
+        this->vect[i] = indef;
+    }
+}
+
+template <class Item>
+VectorItem<Item>::VectorItem(int dim, Item valor) {
     this->capacidad = dim;
     this->vect = new int[capacidad];
     //recorrer dim veces para insertar cada valor
@@ -23,7 +35,7 @@ VectorItem<Item>::VectorItem<Item>(int dim, int valor) {
 }
 
 template <class Item>
-VectorItem<Item>::VectorItem<Item>(VectorItem& p) {
+VectorItem<Item>::VectorItem(VectorItem& p) {
     Vector aux(p.getCapacidad());
     for (int i = 0; i < this->capacidad; i++)
     {
@@ -119,13 +131,3 @@ void VectorItem<Item>::mostrarVector() {
     }
 }
 
-template <class Item>
-VectorItem<Item>::VectorItem<Item>(int cap) {
-    this->capacidad = cap;
-    this->vect = new int[cap];
-    // recorrer el vector y cargarlo del indef/ null(?)
-    for (int i = 0; i < this->capacidad; i++)
-    {
-        this->vect[i] = indef;
-    }
-}

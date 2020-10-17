@@ -2,7 +2,9 @@
 #include <string>
 #ifndef VECTORITEM_H_
 #define VECTORITEM_H_
+#define indef -9999
 using namespace std;
+
 
 template <class Item>
 class VectorItem {
@@ -12,9 +14,9 @@ private:
     bool posicionValida(int pos);
 
 public:
-    VectorItem<Item>(int capacidad = 10);
-    VectorItem<Item>(int dim, Item valor);
-    VectorItem<Item>(VectorItem& p);
+    VectorItem(int capacidad = 10);
+    VectorItem(int dim, Item valor);
+    VectorItem(VectorItem& p);
     ~VectorItem();
 
     int getCapacidad();
@@ -26,4 +28,5 @@ public:
 
     friend class IteradorDeVector;
 };
+
 #endif 
