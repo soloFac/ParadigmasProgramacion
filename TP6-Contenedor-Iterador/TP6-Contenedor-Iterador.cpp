@@ -58,7 +58,9 @@ int main()
     {
         cout << "El elemento 16 no pertenece" << endl;
     }
+
 }
+
 
 bool Pertenece(Vector& v, int elem) {
     Iterador it(v);
@@ -73,6 +75,7 @@ bool Pertenece(Vector& v, int elem) {
     }
     return false;
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu

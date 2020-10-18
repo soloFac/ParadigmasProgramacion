@@ -1,6 +1,9 @@
 #pragma once
+#ifndef ITERADORDEVECTOR_H_
+#define ITERADORDEVECTOR_H_
 #include <iostream>
 #include "VectorItem.h"
+
 
 
 template <class Item>
@@ -9,9 +12,10 @@ class IteradorDeVector
 private:
 	const VectorItem& vector;
 	int posActual;
+	Item nuevoItem;
 
 public:
-	Iterador(const VectorItem& v) : vector(v), posActual(0) {
+	IteradorDeVector(const VectorItem& v) : vector(v), posActual(0) {
 	}
 
 	void setearPosicionAlInicio() {
@@ -29,7 +33,9 @@ public:
 		}
 	}
 
-	Item elementoActual();
+	Item elementoActual() {
+		return vector.vect[posActual];
+	}
 
 	bool hayMasElementos() {
 		if (posActual < vector.capacidad)
@@ -44,7 +50,4 @@ public:
 
 };
 
-template <class Item>
-Item IteradorDeVector<Item>::elementoActual() {
-	return vector.vect[posActual];
-}
+#endif

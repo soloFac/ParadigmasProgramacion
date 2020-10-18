@@ -27,9 +27,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TP6-Contenedor-Iterador.cpp">
-      <Filter>Punto1\Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Vector.cpp">
       <Filter>Punto1\Source Files</Filter>
     </ClCompile>
@@ -41,6 +38,9 @@
     </ClCompile>
     <ClCompile Include="VectorItem.cpp">
       <Filter>Punto2\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TP6-Contenedor-Iterador.cpp">
+      <Filter>Punto1\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

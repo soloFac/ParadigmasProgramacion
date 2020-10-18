@@ -1,5 +1,11 @@
 ﻿  Iterador.cpp
+  IteradorDeVector.cpp
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\TP6-Contenedor-Iterador\VectorItem.h(59,12): error C2760: syntax error: unexpected token 'identifier', expected ';'
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\TP6-Contenedor-Iterador\VectorItem.h(123,27): error C2760: syntax error: unexpected token 'identifier', expected 'type specifier'
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\TP6-Contenedor-Iterador\IteradorDeVector.h(48,2): error C2989: 'IteradorDeVector': class template has already been declared as a non-class template
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\TP6-Contenedor-Iterador\VectorItem.h(31): message : see declaration of 'IteradorDeVector'
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\TP6-Contenedor-Iterador\IteradorDeVector.h(6): error C3857: 'IteradorDeVector': multiple template parameter lists are not allowed
   TP6-Contenedor-Iterador.cpp
 C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\TP6-Contenedor-Iterador\TP6-Contenedor-Iterador.cpp(12,9): warning C4101: 'elementoAct': unreferenced local variable
+  VectorItem.cpp
   Generating Code...
-  TP6-Contenedor-Iterador.vcxproj -> C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\TP6-Contenedor-Iterador\Debug\TP6-Contenedor-Iterador.exe

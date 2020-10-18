@@ -56,7 +56,7 @@ VectorItem<Item>::VectorItem(int dim, Item valor) {
 
 template <class Item>
 VectorItem<Item>::VectorItem(VectorItem& p) {
-    Vector aux(p.getCapacidad());
+    VectorItem aux(p.getCapacidad());
     for (int i = 0; i < this->capacidad; i++)
     {
         aux.insertarElemento(p.getElemento(i), i);
@@ -67,7 +67,6 @@ template <class Item>
 VectorItem<Item>::~VectorItem<Item>() {
     delete[] this->vect;
 }
-
 template <class Item>
 bool VectorItem<Item>::posicionValida(int pos) {
     if (pos >= 0 && pos < this->capacidad)
@@ -121,7 +120,7 @@ template <class Item>
 bool VectorItem<Item>::redimensionar(int cap) {
 
     if (cap > this->capacidad) {
-        Vector* aux = new Vector(cap); // crear un nuv aux 
+        VectorItem* aux = new VectorItem(cap); // crear un nuv aux 
 
         if (&aux == NULL) {
             return false;

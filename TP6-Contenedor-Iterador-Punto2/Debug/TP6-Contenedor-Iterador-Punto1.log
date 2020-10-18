@@ -1,0 +1,6 @@
+﻿  TP6-Contenedor-Iterador-Punto1.cpp
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\TP6-Contenedor-Iterador-Punto1\Iterador.h(50,2): error C2989: 'Iterador': class template has already been declared as a non-class template
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\TP6-Contenedor-Iterador-Punto1\Vector.h(33): message : see declaration of 'Iterador'
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\TP6-Contenedor-Iterador-Punto1\Iterador.h(9): error C3857: 'Iterador': multiple template parameter lists are not allowed
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\TP6-Contenedor-Iterador-Punto1\TP6-Contenedor-Iterador-Punto1.cpp(14,13): error C2059: syntax error: '<'
+C:\Users\Franco\Desktop\Repositorios\mirepositorio\ParadigmasProgramacion\TP6-Contenedor-Iterador-Punto1\TP6-Contenedor-Iterador-Punto1.cpp(16,13): error C2065: 'it': undeclared identifier
