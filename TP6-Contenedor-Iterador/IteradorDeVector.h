@@ -29,9 +29,7 @@ public:
 		}
 	}
 
-	Item elementoActual() {
-		return vector.vect[posActual];
-	}
+	Item elementoActual();
 
 	bool hayMasElementos() {
 		if (posActual < vector.capacidad)
@@ -44,9 +42,9 @@ public:
 		}
 	}
 
-    template <class Item>
-    bool operator ==(Item x, Item y){
-        
-    }
 };
 
+template <class Item>
+Item IteradorDeVector<Item>::elementoActual() {
+	return vector.vect[posActual];
+}
